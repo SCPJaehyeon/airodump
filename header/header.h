@@ -20,7 +20,7 @@
 
 struct mac {
     u_char MAC[6];
-    bool operator<(const mac& omac) const{ //need Modify
+    bool operator<(const mac& omac) const{
         return memcmp(this->MAC, omac.MAC, 6)<0;
     }
 };
