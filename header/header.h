@@ -21,10 +21,7 @@
 struct mac {
     u_char MAC[6];
     bool operator<(const mac& omac) const{ //need Modify
-        if(this->MAC[0]+this->MAC[1]+this->MAC[2]+this->MAC[3]+this->MAC[4]+this->MAC[5] < omac.MAC[0]+omac.MAC[1]+omac.MAC[2]+omac.MAC[3]+omac.MAC[4]+omac.MAC[5]){
-            return true;
-        }
-        return false;
+        return memcmp(this->MAC, omac.MAC, 6)<0;
     }
 };
 struct beaconinfo{
