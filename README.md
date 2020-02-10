@@ -6,10 +6,13 @@ BOB 8th - Network(3rd stage)
 #### Usage
 
 ```shell
+ifconfig [device] down
+iwconfig [device] mode monitor
+ifconfig [device] up
 ./airodump [device]
 ex:) ./airodump wlan0
 ```
-
+*service network-manager stop
 
 
 ##### Picture
