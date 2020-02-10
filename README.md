@@ -12,7 +12,8 @@ ifconfig [device] up
 ./airodump [device]
 ex:) ./airodump wlan0
 ```
-*service network-manager stop
+* If your device mode changes to Manage after a few seconds, perform the following command: 
+service network-manager stop
 
 
 ##### Picture
