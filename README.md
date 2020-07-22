@@ -7,6 +7,7 @@ BOB 8th - Network(3rd stage)
 
 ```shell
 ifconfig [device] down
+airmon-ng check kill
 iwconfig [device] mode monitor
 ifconfig [device] up
 ./airodump [device]
