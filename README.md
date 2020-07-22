@@ -7,14 +7,13 @@ BOB 8th - Network(3rd stage)
 
 ```shell
 ifconfig [device] down
-airmon-ng check kill
 iwconfig [device] mode monitor
 ifconfig [device] up
 ./airodump [device]
 ex:) ./airodump wlan0
 ```
 * If your device mode changes to Manage after a few seconds, perform the following command: 
-service network-manager stop
+service network-manager stop, (or) airmon-ng check kill
 
 
 ##### Picture
